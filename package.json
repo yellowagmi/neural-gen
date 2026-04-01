@@ -1,0 +1,15 @@
+{
+  "name": "neural-gen",
+  "version": "1.0.0",
+  "description": "Generate knowledge graph from markdown documents",
+  "type": "module",
+  "bin": {
+    "neural-gen": "./src/cli.mjs"
+  },
+  "scripts": {
+    "scan": "node src/cli.mjs"
+  },
+  "keywords": ["knowledge-graph", "markdown", "visualiser", "neural"],
+  "author": "yellowagmi",
+  "license": "MIT"
+}

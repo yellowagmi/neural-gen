@@ -1,0 +1,5 @@
+.DS_Store
+*.zip
+files/
+src-bac/
+node_modules/
