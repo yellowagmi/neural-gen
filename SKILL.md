@@ -34,19 +34,19 @@ The scanner is a zero-dependency Node.js script. No `npm install` needed.
 
 ### Step 1: Locate the skill scripts
 
-The scripts live at: `<skill-path>/scripts/cli.mjs`
+The scripts live at: `<skill-path>/src/cli.mjs`
 
 ### Step 2: Run the CLI
 
 ```bash
 # Auto-detect anchor file in the project root (tries CLAUDE.md → AGENTS.md → AGENT.md → SOUL.md → MEMORY.md → README.md)
-node <skill-path>/scripts/cli.mjs
+node <skill-path>/src/cli.mjs
 
 # Specific anchor file
-node <skill-path>/scripts/cli.mjs --file path/to/CLAUDE.md
+node <skill-path>/src/cli.mjs --file path/to/CLAUDE.md
 
 # Custom output directory
-node <skill-path>/scripts/cli.mjs --output ./my-output-dir
+node <skill-path>/src/cli.mjs --output ./my-output-dir
 ```
 
 Run the CLI from the **project root** (the directory containing the markdown files). The scanner resolves linked .md paths relative to the anchor file's directory.
@@ -62,15 +62,15 @@ The CLI writes two timestamped files into the output directory (default `./neura
 
 **User says "scan my docs" or "generate a knowledge graph":**
 1. Check for markdown files in the project root
-2. Run `node <skill-path>/scripts/cli.mjs` from the project root
+2. Run `node <skill-path>/src/cli.mjs` from the project root
 3. Present the summary to the user and point them to the graph JSON
 
 **User specifies a file:**
-1. Run `node <skill-path>/scripts/cli.mjs --file <their-file>`
+1. Run `node <skill-path>/src/cli.mjs --file <their-file>`
 2. Present results
 
 **User wants output in a specific location:**
-1. Run `node <skill-path>/scripts/cli.mjs --output <their-path>`
+1. Run `node <skill-path>/src/cli.mjs --output <their-path>`
 
 ## Output format
 
