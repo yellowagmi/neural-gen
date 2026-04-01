@@ -55,7 +55,7 @@ Run the CLI from the **project root** (the directory containing the markdown fil
 
 The CLI writes two timestamped files into the output directory (default `./neural-graph/`):
 
-- `graph_<timestamp>.json` — The full graph with nodes, edges, and metadata
+- `neural_<timestamp>.json` — The full graph with nodes, edges, and metadata
 - `summary_<timestamp>.md` — Human-readable stats and top concepts
 
 ### Common patterns

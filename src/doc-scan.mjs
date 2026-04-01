@@ -586,7 +586,7 @@ export function scan(inputFile, outputPath = './neural') {
   // Generate timestamp for filenames
   const ts = new Date().toISOString().replace(/[-:]/g, '').replace('T', '_').slice(0, 15);
 
-  writeFileSync(join(OUTPUT_DIR, `graph_${ts}.json`), JSON.stringify(graph, null, 2));
+  writeFileSync(join(OUTPUT_DIR, `neural_${ts}.json`), JSON.stringify(graph, null, 2));
 
   // ── summary ──
   const typeCounts = {};
@@ -644,5 +644,5 @@ ${sharedNodes.slice(0,10).map((n,i) => `${i+1}. **${n.label}** — ${n.degree} c
     console.log(`\nShared (cross-file):`);
     sharedNodes.slice(0,5).forEach(n => console.log(`  ${n.label} (${n.degree} conn)`));
   }
-  console.log(`\nOutput: ${OUTPUT_DIR}/graph_${ts}.json`);
+  console.log(`\nOutput: ${OUTPUT_DIR}/neural_${ts}.json`);
 }

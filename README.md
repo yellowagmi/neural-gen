@@ -15,7 +15,7 @@ node /path/to/neural-gen/src/cli.mjs
 
 Auto-detects: `CLAUDE.md` → `AGENTS.md` → `AGENT.md` → `SOUL.md` → `MEMORY.md` → `README.md`
 
-Output: `./neural-graph/` (timestamped `graph_<timestamp>.json` + `summary_<timestamp>.md`)
+Output: `./neural-graph/` (timestamped `neural_<timestamp>.json` + `summary_<timestamp>.md`)
 
 ## Usage
 
@@ -34,7 +34,7 @@ node src/cli.mjs --output ./my-graphs
 
 Given a project with markdown docs like `CLAUDE.md`, `AGENTS.md`, `PROJECT.md`, Neural outputs:
 
-- **`graph_<timestamp>.json`** — Nodes (sections, entities, terms) and edges (contains, mentions, cross-file links) clustered by source file
+- **`neural_<timestamp>.json`** — Nodes (sections, entities, terms) and edges (contains, mentions, cross-file links) clustered by source file
 - **`summary_<timestamp>.md`** — Stats, top concepts, and shared cross-file entities
 
 ## Install as a Skill
