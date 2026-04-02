@@ -1,6 +1,6 @@
 # Neural
 
-Generate knowledge graph JSON from your markdown documentation — for use with force-directed or galaxy-style visualizers.
+Generate 3D knowledge graph in JSON from your agent's markdown documentation.
 
 Neural scans an anchor markdown file, discovers all linked `.md` files, extracts entities/sections/terms, detects shared concepts across files, and outputs a structured graph JSON.
 
