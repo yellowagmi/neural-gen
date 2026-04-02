@@ -8,8 +8,6 @@ Neural scans an anchor markdown file, discovers all linked `.md` files, extracts
 
 ```bash
 cd your-project
-npx neural-gen
-# or run directly
 node /path/to/neural-gen/src/cli.mjs
 ```
 
